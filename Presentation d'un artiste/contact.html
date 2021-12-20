@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gaëtan Roussel</title>
+    <link rel="stylesheet" href="dist/jquery-ui.css">
+    <!-- Main Stylesheet File -->
+    <link rel="stylesheet" href="css/structure.css" media="all">
+    <link rel="stylesheet" href="css/form.css" media="all">
+  </head>
+
+  <body>
+      <header class="site-header">
+        <div class="site-branding">
+          <p class="headerTitre">Gaëtan Roussel</p>
+        </div>
+        <input type="checkbox" id="top-nav" name="top-nav" aria-labelledby="top-nav-toggle" />
+        <label for="top-nav" class="top-nav-label" id="top-nav-toggle">
+          <span class="open-close-menu">
+            <span class="open-menu">Open menu</span>
+            <span class="close-menu">Close menu</span>
+          </span>
+        </label>
+        <nav class="main-navigation">
+          <ul class="menu">
+            <li class="menu-item">
+              <a href="index.html">Accueil</a>
+            </li>
+            <li class="menu-item">
+              <a href="presentation.html">Présentation</a>
+            </li>
+            </li>
+            <li class="menu-item">
+              <a href="discographie.html">Discographie</a>
+            </li>
+            <li class="menu-item">
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header> <!-- Fin du HEADER -->
+      <main class="site-main"> <!-- Début du conteneur principal -->
+        <div id="myFormulaire"> <!-- Début du bloc pour le mode CSS Grid -->
+          <form class="myContact" action="" name="myContact" onsubmit="return checkForm();" method="post"> 
+            <h1>Contact</h1> 
+            <p> 
+                <label for="nomId" data-icon="u" > Nom </label>
+                <input id="nomId" name="nom" required type="text" maxlength="25" size="20" placeholder="Entrez votre nom" />
+            </p>
+            <p> 
+                <label for="email" data-icon="p">Adresse mail</label>
+                <input id="email" name="email" required type="email" placeholder="toto@paris.fr" /> 
+            </p>
+            <p>
+                <label for="diplom_selId">Techniques Web</label><br />
+                <select name="diplom_sel" id="diplom_selId">
+                    <option value="0">Faites votre choix</option>
+                    <option value="1">HTML/CSS</option>
+                    <option value="2">Javascript</option>
+                    <option value="3">Php</option>
+                    <option value="4">MySql</option>
+                    <option value="5">Bootstrap</option>
+                    <option value="5">Wordpress</option>
+                </select>
+            </p>
+            <p>                
+                <label for="comment" data-icon="u"> Commentaire </label><br />
+                <textarea id="comment" name="comment" required rows="8" cols="66"></textarea> 
+            </p>
+            <p> 
+                <label for="newsLetter">Inscription à la newsletter</label>
+                <input type="checkbox" name="newsLetter" id="newsLetter" value="ok" /> 
+            </p>
+            <p>
+                <label for="sexeId">Sexe</label><br />
+                F <input id="sexeId" type="radio" name="sexe" value="F"/> 
+                H <input type="radio" name="sexe" value="H" />
+            </p>
+            <p>
+                <input type="submit" value="Envoyer" /> 
+            </p>
+          </form>    
+        </div> <!-- Fin du bloc DIV pour le mode CSS Grid -->
+      </main> <!-- Fin du conteneur principal -->
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="copyright-box">
+                <h4>Mentions légales:</h4><br>
+                <div id="myBlocAccordeon" class="ui-widget-content">
+                <div id="myAccordeon">
+                  <h3>Editeur</h3>
+                  <div id="myBlocAuteur">
+                    <article class="myInfosFooter">
+                      <p class="texteImportant">Design - Réalisation Fabien Cazayous.</p>
+                    </article>
+                    <article class="myInfosFooter">
+                      <p class="texteImportant">Contenu rédactionnel Fabien Cazayous.</p>
+                    </article>
+                    <article class="myInfosFooter">
+                      <p class="texteImportant">Photos Pascal Ailleurs.</p>
+                    </article>
+                    <article class="myInfosFooter">
+                      <p class="texteImportant">Hébergeur : Site hébergé par Mon Hébergeur.</p>
+                    </article>
+                    <article class="myInfosFooter">
+                      <p class="texteImportant">Mobile : 06 48 96 22 90</p>
+                    </article>
+                    <article class="myInfosFooter"> 
+                    </article>
+                    <p class="titreMoinsImportant"><a href="https://bootstrapmade.com/">Design de Fabien Cazayous avec un template de BootstrapMade</a></p>
+                    <p class="texteMoinsImportant">Site réalisé avec Bootstrap et jQuery.</p>
+                  </div> <!-- Fi DIV myBlocAuteur -->
+                  <h3>Droits d'auteur et droits de reproduction</h3>
+                  <div>
+                    <p class="texteMoinsImportant">L’ensemble de ce site relève de la législation française et internationale 
+                      sur le droit d’auteur et la propriété intellectuelle. <br>Tous les droits de reproduction 
+                      sont réservés, y compris les représentations iconographiques et photographiques. <br><br>
+                      La reproduction de tout ou partie de ce site sur un support quel qu’il soit, est formellement 
+                      interdite sauf autorisation expresse du responsable du site.</p>
+                  </div> <!-- -->
+                  <h3>Cookies</h3>
+                  <div>
+                    <p class="texteMoinsImportant">
+                      Pour l'auteur de ce site, votre expérience est une priorité. C’est pourquoi il utilise des cookies au titre de notre 
+                      intérêt légitime à améliorer votre expérience utilisateur, réaliser des statistiques. <br><br> En poursuivant votre 
+                      navigation, vous acceptez le dépôt de cookies, pour accéder à certaines de vos données personnelles liées à votre navigation 
+                      sur ce site (telles que l’IP, les pages visitées…). <br>Elles sont utilisées pour mesurer leur performance et pour vous 
+                      permettre de partager sur les réseaux sociaux. Vous pouvez changer d’avis à tout moment en cliquant sur « Tous droits 
+                      réservés / Mentions légales » figurant en bas de chaque page.</p>
+                  </div>
+                  <h3>Contenus embarqués</h3>
+                  <div>
+                    <p class="texteMoinsImportant">
+                      Les articles de ce site peuvent inclure des contenus intégrés (par exemple des vidéos, images, articles…). <br> Le contenu 
+                      intégré depuis d’autres sites se comporte de la même manière que si le visiteur se rendait sur cet autre site. <br><br> Ces sites 
+                      web pourraient collecter des données sur vous, utiliser des cookies, embarquer des outils de suivis tiers, suivre vos 
+                      interactions avec ces contenus embarqués si vous disposez d’un compte connecté sur leur site web.</p>
+                  </div>
+                  <h3>Durées de stockage de vos données</h3>
+                  <div>
+                    <p class="texteMoinsImportant">
+                      Si vous envoyez un message via le formulaire contact, le message et vos informations personnelles sont conservés 
+                      momentanément dans une boîte mail. <br> Cela permet de vous recontacter afin que vous puissiez vous inscrire pour une 
+                      formation ou un stage. <br><br> Pour les utilisateurs et utilisatrices qui s’enregistrent sur notre site (si cela est possible), 
+                      nous stockons également les données personnelles indiquées dans leur profil. <br> Tous les utilisateurs et utilisatrices 
+                      peuvent voir, modifier ou supprimer leurs informations personnelles à tout moment (à l’exception de leur nom d’utilisateur·ice). 
+                      Les gestionnaires du site peuvent aussi voir et modifier ces informations.</p>
+                  </div>
+                  <h3>Vos droits sur vos données</h3>
+                  <div>
+                    <p class="texteMoinsImportant">
+                      Si vous avez un compte ou si vous avez laissé des messages sur le site, vous pouvez demander à recevoir un fichier contenant 
+                      toutes les données personnelles que nous possédons à votre sujet, incluant celles que vous nous avez fournies. <br><br> Vous pouvez également 
+                      demander la suppression des données personnelles vous concernant. Cela ne prend pas en compte les données stockées à des fins 
+                      administratives, légales ou pour des raisons de sécurité.</p>
+                  </div>
+                </div> <!-- Fin DIV myAccordeon -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- JavaScript Libraries -->
+    <script src="dist/external/jquery.js"></script>
+    <script src="dist/jquery-ui.js"></script>
+  </body>
+  <script src="js/script.js"></script>
+</html>

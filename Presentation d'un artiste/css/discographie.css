@@ -1,0 +1,114 @@
+/* Feuille de style pour le TP Présenter un artiste */
+/* Ce modèle est en mode multipages mais il peut facilement passer en mode One page */
+/* Dernière révision le 04/07/2021 */
+/* Fabien Cazayous */
+
+/* Importation d'une police Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+/* font-family: 'Noto Sans', sans-serif; */
+
+#myPresentation{
+    position: relative;
+    top: 1rem;
+    left: 5%;
+    width: 90%;
+    padding: 5px;
+    height: 35rem;
+    background-color: cadetblue;
+    font-size: 1em;
+    color: black;
+    z-index: unset;
+    border-radius: 5px;
+    border-width: 3px;
+    border-left-style: outset;
+    border-left-color: lightgray;
+    border-top-color: lightgray;
+    border-right-color: darkgrey;
+    border-bottom-color: darkgrey; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 34rem;
+}
+
+
+.myIllustration, myDiscographie{
+    background-color: oldlace;
+    padding: 4px;
+    margin: 10px;
+    text-align: center;
+    color: black;
+    margin: 2%;
+    border-width: 3px;
+    border-left-style: outset;
+    border-left-color: lightgray;
+    border-top-color: lightgray;
+    border-right-color: darkgrey;
+    border-bottom-color: darkgrey;
+    overflow: auto;
+}
+
+#tabs{
+    width: 32rem;
+    height: 31.5rem;
+    margin-top: 1.3rem;
+    margin-left: 3.6rem;
+}
+
+.myIllustration{
+    width: 32rem;
+    height: 31.5rem;
+    margin-top: 1.3rem;
+    margin-left: 3.6rem;
+}
+
+.myIllustration{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    margin: 20px;
+}
+
+.myDiscographie{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    margin: 20px;
+}
+
+.myBlocTitre{
+    text-align: center;
+    padding-top: 1rem;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 800;
+    font-size: 1.6em;
+    font-weight: bolder;
+    color: black;
+}
+
+.myParagrafe{
+    padding-top: 2rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    font-size: 1.2em;
+    font-weight: bolder;
+    color: black;
+}
+
+@media screen and (max-width: 728px){
+    #myPresentation{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }  
+    #tabs{
+        width: 31.8rem;
+        height: 31.5rem;
+        margin-top: 1.3rem;
+        margin-left: -0.2rem;
+    }
+}
