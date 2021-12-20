@@ -1,0 +1,40 @@
+.main-container{
+    width: 500px;
+    margin: 15px;
+}
+
+#screen{
+    width: 500px;
+    font-size: 30px;
+    text-align: right;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    border : 2px black solid;
+    border-radius: 5px;
+
+}
+#numericPad{
+width: 500px;
+display: grid;
+height: 250px;
+grid-template-columns: repeat(4, 1fr);
+/* column-gap: 10px;
+row-gap: 10px; */
+gap: 10px;
+}
+
+#numericPad button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1eeee;
+    border-radius: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+#numericPad button:nth-child(4n){
+    background-color: #b6b5b5;
+}
+#numericPad #egale{
+    background-color: #315be2;
+}
